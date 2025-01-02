@@ -23,6 +23,25 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     width: 100%;
+    margin: 0 auto;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    height: 100vh; 
+    background: linear-gradient(45deg, #cec8ff, #edffdf, #cfd9ff, #ffebc4);
+    background-size: 300% 300%; 
+    animation: gradient-animation 10s ease infinite;
 }
 
 h1 {
@@ -53,6 +72,9 @@ h4 {
     color: var(--text-color);
 }
 .flex{
+    display: flex !important;
+}
+.flex-stack-mobile{
     display: flex !important;
 }
 .flex-wrap{
@@ -370,4 +392,72 @@ nav ul{
 .parent-bg:has(.card-shop:hover) {
     background: var(--shop-color-hover-light);
     transition: all .15s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-stack-mobile{
+        flex-direction: column;
+    }
+    .w-50{
+        max-width: 100%;
+    }
+    .mobile-100{
+        max-width: 100% !important;
+    }
+    .max-w-standard{
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+    }
+    .img-display-sm{
+        max-width: none;
+    }
+    .nav-wrapper{
+        position: relative;
+        align-items: center;
+    }
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+
+    #nav-links li {
+        display: block;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hamburger Menu Style */
+    #hamburger-icon {
+        cursor: pointer;
+        display: block;
+    }
+
+    /* Show hamburger menu on mobile */
+    .lucide-icon {
+        font-size: 24px;
+    }
+
+    /* When hamburger is clicked, show the navigation links */
+    .hamburger-active {
+        display: flex !important;
+        /* width: 100vw; */
+        position: fixed;
+        top: 28px;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #hamburger-icon {
+        display: none; /* Hide hamburger icon on large screens */
+    }
+
+    #nav-links {
+        display: flex;
+        flex-direction: row;
+    }
 }

@@ -7,24 +7,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <nav class="max-w-standard margin-auto">
-        <div class="flex space-between align-center">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-            <li class="margin-right-md hover-bg-office"><a href="office.html" class="hover-office">Office</a></li>
-            <li class="margin-right-md hover-bg-studio"><a href="studio.html" class="hover-studio">Studio</a></li>
-            <li class="margin-right-md hover-bg-garage"><a href="garage.html" class="hover-garage">Garage</a></li>
-            <li class="margin-right-md hover-bg-shop"><a href="shop.html" class="hover-shop">Shop</a></li>
-            <li class="hover-bg-office"><a href="about.html" class="hover-office">About</a></li>
-        </ul>
-    </div>
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="padding-page-top"></div>
-    <div class="max-w-standard margin-auto flex space-between border rounded border-garage bg-garage-light padding-md">
+    <div class="max-w-standard margin-auto flex-stack-mobile space-between border rounded border-garage bg-garage-light padding-md">
         <div class="w-50">
             <h2>Garage</h2>
             <div class="flex flex-wrap margin-bottom-sm gap">
@@ -41,7 +46,7 @@
     </div>
     <div class="padding-page-divider"></div>
     <div class="max-w-standard margin-auto">
-        <a class="border rounded padding-md flex space-between gap align-center card card-garage margin-top-md">
+        <a class="border rounded padding-md flex-stack-mobile space-between gap align-center card card-garage margin-top-md">
             <div class="w-50 img-cover-container">
                 <img class="rounded w-100 img-cover" src="assets/ecg-cover.png">
             </div>
@@ -53,7 +58,7 @@
                 </div>
             </div>
         </a>
-        <a class="border rounded padding-md flex space-between gap align-center card card-garage margin-top-md">
+        <a class="border rounded padding-md flex-stack-mobile space-between gap align-center card card-garage margin-top-md">
             <div class="w-50 img-cover-container">
                 <img class="rounded w-100 img-cover" src="assets/skating-cover.png">
             </div>
@@ -65,7 +70,7 @@
                 </div>
             </div>
         </a>
-        <a class="border rounded padding-md flex space-between gap align-center card card-garage margin-top-md">
+        <a class="border rounded padding-md flex-stack-mobile space-between gap align-center card card-garage margin-top-md">
             <div class="w-50 img-cover-container">
                 <img class="rounded w-100 img-cover" src="assets/est-cover.jpg">
             </div>
@@ -77,7 +82,7 @@
                 </div>
             </div>
         </a>
-        <a class="border rounded padding-md flex space-between gap align-center card card-garage margin-top-md">
+        <a class="border rounded padding-md flex-stack-mobile space-between gap align-center card card-garage margin-top-md">
             <div class="w-50 img-cover-container">
                 <img class="rounded w-100 img-cover" src="assets/sa-cover.png">
             </div>
