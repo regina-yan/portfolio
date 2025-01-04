@@ -571,6 +571,9 @@ td:nth-child(2), th:nth-child(2) {
     display: inline-block;
     background-position: 0px;
 }
+.centered-mobile{
+    margin-left: 0 !important;
+}
 @media only screen and (max-width: 768px) {
     .flex-stack-mobile{
         flex-direction: column;
