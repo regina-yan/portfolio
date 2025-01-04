@@ -243,6 +243,9 @@ p{
 .text-link.shop{
     color: var(--shop-color) !important;
 }
+.text-link.office{
+    color: var(--office-color) !important;
+}
 .text-link:hover{
     text-decoration: underline;
     text-underline-offset: 5px;
