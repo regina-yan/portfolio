@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Springtime</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 border" src="../assets/stool-cover.png">
+            </div>
+            <div class="w-50">
+                <h2>Springtime</h2>
+                <p>
+                    <div class="flex margin-bottom-sm">
+                        <div class="flex align-center rounded margin-right-md"><i data-lucide="volleyball" class="margin-right-sm color-studio "></i>Fiber Arts</div>
+                        <div class="flex align-center rounded"><i data-lucide="tree-deciduous" class="margin-right-sm color-studio "></i>Wood</div>
+                    </div>
+                    I had the joy of staying home with my family in Kansas for a few months while working remotely during the COVID-19 pandemic. We spent countless evenings playing my brother's favorite game, Monopoly, which usually lasted 3+ hours per game since no one could admit they had lost haha! My mom mentioned at one point that her Rubbermaid step stool she was sitting on during these long games was giving her some back pain since it was a bit too low. As a thank-you gift for the wonderful time at home, I made this "Springtime" stool that gave some extra cushioning and comfort at the perfect height.
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <p>
+                I made this stool from a 2x2x8 and 1/2 in. piece of plywood. I didn't make a sketch beforehand, but I knew I wanted something a little funkier than a standard boxy stool. The seat is a stretched hexagonal shape and the legs are slightly angled to create a trapezoid.
+            </p>
+            <img class="w-100 rounded margin-top-md" src="../assets/stool-1.jpg"/>
+        </div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <p>
+                The punch needled cushion took the longest -- I initially used an embroidery hoop but soon made a small wooden frame for the cushion. I wanted the flowers to feel slightly raised above the green grass background, so I punch needled the background and foreground on separate sides of the fabric
+            </p>
+            <img class="w-100 rounded margin-top-md" src="../assets/stool-2.jpg"/>
+        </div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <p>
+                Close-up view of the "Springtime" pattern. I used the Airtex 2" High Density Foam for the cushion and used a staple gun to attach the fabric to the wood
+            </p>
+            <img class="w-100 rounded margin-top-md" src="../assets/stool-3.jpg"/>
+        </div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <p>
+                Top view of the stool
+            </p>
+            <img class="w-100 rounded margin-top-md" src="../assets/stool-4.jpg"/>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="nomad.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Nomad</p>
+        </a>
+        <a class="w-100 text-align-right link hover-studio" href="pilot.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Pilot</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

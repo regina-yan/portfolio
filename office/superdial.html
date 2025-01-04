@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | SuperDial</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100" src="../assets/superdial-marketing.jpeg">
+            </div>
+            <div class="w-50">
+                <h2>SuperDial</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                        <div class="flex align-center rounded"><i data-lucide="info" class="margin-right-sm color-office "></i>Founding product designer</div>
+                    </div>
+                    SuperDial is an outbound health care phone caller that calls insurance companies with an AI voice. It'll navigate a payer's automated IVR system, speak to a representative, and use a customized script to retrieve answers to questions. 
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>My Role</h4>
+            <p class="">I was the <b>sole designer</b> at this 8-person company and designed every feature in the web apps and marketing site. I also did a good deal of <b>full-stack development</b>, from implementing self-serve API configurations to handling front-end UI work. I lightly <b>PM-ed</b> the portal features by developing product roadmaps, and performed the bulk of <b>QA testing</b> before we deployed to customers. Typical startup role!</p>
+        </div>
+        <div class="padding-page-divider"></div>
+        <div class="">
+            <h4>Main Responsibilities</h4>
+            <p>As the sole designer, I was responsible for all three parts of the product, which involved three very different user personas:</p>
+            <ul>
+                <li>
+                    <b>Customer Portal</b> - Ensuring customers can easily define scripts, place calls, view results, and perform sandbox developer tasks. 
+                </li>
+                <li>
+                    <b>Internal Audit Platform</b> - Allow our internal "super-users" team to quickly review AI call performance and flag issues
+                </li>
+                <li>
+                    <b>Internal Call Center</b> - Equip our internal support team with call center capabilities if the AI fails
+                </li>
+            </ul>
+        </div>
+        <div class="padding-page-divider"></div>
+        <div class="">
+            <h4>Case Studies</h4>
+            <a class="border rounded padding-md flex-stack-mobile space-between gap align-center card card-office">
+                <div class="w-50 img-cover-container-short border rounded">
+                    <img class="rounded w-100 img-cover" src="../assets/superdial-script.svg">
+                </div>
+                <div class="w-50 margin-left-sm">
+                    <b>Designing a Conversation</b>
+                    <p class="color-secondary">The process behind SuperDial's "Script Builder" that facilitates the AI conversation</p>
+                    <p>COMING SOON</p>
+                </div>
+            </a>
+        </div>
+        <div class="padding-page-divider"></div>
+        <div class="">
+            <h4>Development Work Overview</h4>
+            <p>I won't deep-dive into my dev work, but a couple features I built include:</p>
+            <div class="flex-stack-mobile gap-md flex-wrap">
+                <div class="w-50 rounded bg-light-grey padding-sm text-xs">
+                    <div class="img-cover-container-extrashort margin-bottom-sm">
+                        <img class="rounded w-100 img-cover" src="../assets/superdial-style.svg">
+                    </div>
+                    <b>Translating design to production</b>
+                    <p>My first step into development was owning the front-end work, which involved writing javascript, employing Tailwind CSS framework for the UI, and building reusable React components</p>
+
+                </div>
+                <div class="w-50 rounded bg-light-grey padding-sm text-xs">
+                    <div class="img-cover-container-extrashort margin-bottom-sm">
+                        <img class="rounded w-100 img-cover" src="../assets/superdial-2fa.png">
+                    </div>
+                    <b>2-Factor Authentication</b>
+                    <p>I built 2FA which involved Firebase Auth + Identity Platform management, tracking tokens, and signing users out after 1 hour or 30 days depending on preferences</p>
+
+                </div>
+                <div class="w-50 rounded bg-light-grey padding-sm text-xs">
+                    <div class="img-cover-container-extrashort margin-bottom-sm">
+                        <img class="rounded w-100 img-cover" src="../assets/superdial-pdf.png">
+                    </div>
+                    <b>PDF generation</b>
+                    <p>We return call results in a CSV format, but I helped convert the CSV to PDFs using Beautiful Soup (Python HTML parser), and I implemented the ability to customize PDFs with customer logos</p>
+
+                </div>
+                <div class="w-50 rounded bg-light-grey padding-sm text-xs">
+                    <div class="img-cover-container-extrashort margin-bottom-sm">
+                        <img class="rounded w-100 img-cover" src="../assets/superdial-api.png">
+                    </div>
+                    <b>Self-serve API configuration</b>
+                    <p>I built an API configuration page to allow customers to generate their own sandbox and prod API keys + secrets, which involved front-end React components and back-end python code to generate keys/secrets to store in the database</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <!-- <a class="w-100">
+            <span></span>
+        </a> -->
+        <a class="w-100 text-align-right link hover-office" href="superpay.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>SuperPay</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

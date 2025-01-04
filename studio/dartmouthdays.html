@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | The Dartmouth Days</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 border" src="../assets/dartmouth-cover.png">
+            </div>
+            <div class="w-50">
+                <h2>The Dartmouth Days</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                        <div class="flex align-center rounded"><i data-lucide="brush" class="margin-right-sm color-studio "></i>Illustration</div>
+                    </div>
+                    A lovely, nostalgic, post-graduation weekend in Hanover inspired me to make "The Dartmouth Days", a series of illustrations that reflect on the four most formative years of my life
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <div class="flex-stack-mobile flex-wrap gap-lg space-between">
+                <img class="w-50 rounded" src="../assets/dartmouth-04.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-03.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-01.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-05.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-23.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-24.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-25.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-08.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-09.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-26.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-02.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-10.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-11.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-12.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-13.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-14.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-15.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-16.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-17.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-35.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-32.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-34.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-27.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-28.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-29.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-30.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-31.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-39.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-37.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-36.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-38.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-40.png"/>
+                <img class="w-50 rounded" src="../assets/dartmouth-41.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="climbingwall.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Climbing Wall</p>
+        </a>
+        <a class="w-100 text-align-right link hover-studio" href="sewing.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Sewing Dresses</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

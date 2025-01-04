@@ -14,6 +14,9 @@
     <div class="padding-page-top"></div>
     <div class="max-w-wide margin-auto">
         <!-- <div class="flex justify-center"><h3>Atelier</h3></div> -->
+         <div class="flex justify-center margin-auto">
+            <div class="logo"></div>
+         </div>
         <div class="flex justify-center"><h1>Design by Regina</h1></div>
     </div>
     <div class="parent-bg">
@@ -22,7 +25,7 @@
                 <div class="bg-office-light padding-sm rounded-top margin-sm margin-sides">
                     <i data-lucide="heart-handshake" class="color-office"></i><br/>A UX Designer and Front-End Engineer...</div>
                 <a class="card card-office border rounded padding-sm" href="office.html">
-                    <img class="img-display-sm" src="assets/superdial-marketing.jpeg">
+                    <img id="imageRotator1" class="img-display-sm" src="assets/superdial-marketing.jpeg">
                     <div class="link flex space-between">
                         Office
                         <i data-lucide="arrow-right"></i>
@@ -32,7 +35,7 @@
             <div class="margin-sm w-25 mobile-100">
                 <div class="bg-studio-light padding-sm rounded-top margin-sm margin-sides"> <i data-lucide="paintbrush" class="color-studio"></i><br/>who loves tinkering with side projects...</div>
                 <a class="card card-studio border rounded padding-sm" href="studio.html">
-                    <img class="img-display-sm" src="assets/lino-cover.png">
+                    <img id="imageRotator2" class="img-display-sm" src="assets/lino-cover.png">
                     <div class="link flex space-between">
                         Studio
                         <i data-lucide="arrow-right"></i>
@@ -42,7 +45,7 @@
             <div class="margin-sm w-25 mobile-100">
                 <div class="bg-garage-light padding-sm rounded-top margin-sm margin-sides"><i data-lucide="tent-tree" class="color-garage"></i><br/>documenting her adventures...</div>
                 <a class="card card-garage border rounded padding-sm" href="garage.html">
-                    <img class="img-display-sm" src="assets/ecg-cover.png">
+                    <img id="imageRotator3" class="img-display-sm" src="assets/ecg-cover.png">
                     <div class="link flex space-between">
                         Garage
                         <i data-lucide="arrow-right"></i>
@@ -52,7 +55,7 @@
             <div class="margin-sm w-25 mobile-100">
                 <div class="bg-shop-light padding-sm rounded-top margin-sm margin-sides"><i data-lucide="store" class="color-shop"></i><br/>and raising money for non-profits</div>
                 <a class="card card-shop border rounded padding-sm" href="shop.html" >
-                    <img class="img-display-sm" src="assets/ecga-shirt2.png">
+                    <img id="imageRotator4" class="img-display-sm" src="assets/ecga-shirt2.png">
                     <div class="link flex space-between">
                         Shop
                         <i data-lucide="arrow-right"></i>
@@ -64,16 +67,101 @@
     <div class="padding-page-divider"></div>
     <div class="max-w-wide margin-auto">
         <div class="flex justify-center">
-            <a class=" card card-office flex border rounded padding-sm align-center margin-sm" href="about.html">
+            <a class=" card card-primary flex border rounded padding-sm align-center margin-sm" href="about.html">
                 About me <i data-lucide="arrow-right" class="margin-left-sm"></i>
             </a>
-            <a class="card card-office flex border rounded padding-sm margin-sm" href="https://www.instagram.com/designbyregina" target="_blank">
+            <a class="card card-primary flex border rounded padding-sm margin-sm" href="https://www.instagram.com/designbyregina" target="_blank">
                 Design Instagram <i data-lucide="square-arrow-out-up-right" class="margin-left-sm"></i>
             </a>
         </div>
     </div>
     <script>
         lucide.createIcons();
+    </script>
+    <script>
+        const officeImages = [
+            "assets/superdial-marketing.jpeg",
+            "assets/superpay-cover.svg",
+            "assets/appian-cover.png",
+        ];
+
+        const studioImages = [
+            "assets/climbingwall-cover.jpg",
+            "assets/dartmouth-cover.png",
+            "assets/dresses-cover.png",
+            "assets/appian-rebrand-cover.png",
+            "assets/punch-cover.png",
+            "assets/embroidery-cover.png",
+            "assets/metro-cover.jpg",
+            "assets/lino-cover.png"
+        ];
+
+        const garageImages = [
+            "assets/ecg-cover.png",
+            "assets/skating-cover.png",
+            "assets/est-cover.jpg"
+        ];
+
+        const shopImages = [
+            "assets/donatedartmouth-cover.png",
+            "assets/ecga_nc.png",
+            "assets/lino-ecg1.png",
+            "assets/ecg-embroidery.jpg"
+        ];
+        
+        let officeIndex = 0; 
+        let studioIndex = 0;
+        let garageIndex = 0;
+        let shopIndex = 0;
+
+        function changeOfficeImage() {
+        officeIndex = (officeIndex + 1) % officeImages.length;
+        document.getElementById("imageRotator1").src = officeImages[officeIndex];
+        }
+        function changeStudioImage() {
+        studioIndex = (studioIndex + 1) % studioImages.length;
+        document.getElementById("imageRotator2").src = studioImages[studioIndex];
+        }
+        function changeGarageImage() {
+        garageIndex = (garageIndex + 1) % garageImages.length;
+        document.getElementById("imageRotator3").src = garageImages[garageIndex];
+        }
+        function changeShopImage() {
+        shopIndex = (shopIndex + 1) % shopImages.length;
+        document.getElementById("imageRotator4").src = shopImages[shopIndex];
+        }
+        function isMobile() {
+        return window.innerWidth <= 768;
+        }
+
+        if (!isMobile()) {
+            setTimeout(() => {
+            changeOfficeImage();
+            }, 0);
+            setTimeout(() => {
+                changeStudioImage();
+            }, 1000);
+            setTimeout(() => {
+                changeGarageImage();
+            }, 2000);
+            setTimeout(() => {
+                changeShopImage();
+            }, 3000);
+
+            setInterval(changeOfficeImage, 4000);
+
+            setTimeout(() => {
+                setInterval(changeStudioImage, 4000);
+            }, 1000);
+            setTimeout(() => {
+                setInterval(changeGarageImage, 4000);
+            }, 2000);
+            setTimeout(() => {
+                setInterval(changeShopImage, 4000);
+            }, 3000);
+
+        }
+
     </script>
 </body>
 </html>

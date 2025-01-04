@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Nomad</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100" src="../assets/nomad-cover.png">
+            </div>
+            <div class="w-50">
+                <h2>Nomad</h2>
+                <p>
+                    <div class="flex margin-bottom-sm">
+                        <div class="flex align-center rounded margin-right-md"><i data-lucide="volleyball" class="margin-right-sm color-studio "></i>Fiber Arts</div>
+                    </div>
+                    2023 was a year of digital nomading along the west coast. First stop? San Francisco! My partner Shep and I were lucky enough to find a Facebook Marketplace sublet on Ocean Beach with a large window overlooking the ocean. Working early east coast hours, I watched gorgeous sunrise after sunrise as the sky transformed into countless shades of purple, pink and blue. I also happened to live near Love Fest Fibers who offers small-batch, sustainably sourced yarn and my goodness I'm never going back to Joann's again! (my wallet disagrees).<br/><br/>
+
+I present to you, Nomad!
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">       
+            <div class="flex-stack-mobile flex-wrap gap justify-center">
+                <img class="w-50 mobile-100 rounded " src="../assets/nomad-1.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/nomad-2.png"/>
+            </div>
+            <img class="w-100 rounded margin-top-md" src="../assets/nomad-3.png"/>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="doodle.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>A Doodle a Day</p>
+        </a>
+        <a class="w-100 text-align-right link hover-studio" href="springtime.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Springtime</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

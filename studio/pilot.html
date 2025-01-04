@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Pilot</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 " src="../assets/pilot-cover.jpg">
+            </div>
+            <div class="w-50">
+                <h2>Springtime</h2>
+                <p>
+                    <div class="flex margin-bottom-sm">
+                        <div class="flex align-center rounded margin-right-md"><i data-lucide="volleyball" class="margin-right-sm color-studio "></i>Fiber Arts</div>
+                    </div>
+                    "Pilot" was my first weaving project. I had just moved into a new home during the pandemic and needed both wall decor and a quarantine hobby. I watched a video by withwendy, a huge inspiration of mine, where she showed different techniques for large-scale loom weaving. I was immediately drawn to the idea of big, abstract, fiber art projects since most of the work I do is quite the opposite — small, vector-based, digital work. This project is called "Pilot" because I really had no idea what I was doing — I literally put nails into a yardstick and taped that to a doorframe to make the loom — but, this project established a tone and style for my future weavings
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <div class="flex-stack-mobile gap justify-center">
+                <img class="w-33 mobile-100 rounded " src="../assets/pilot-1.jpg"/>
+                <img class="w-33 mobile-100 rounded " src="../assets/pilot-2.jpg"/>
+                <img class="w-33 mobile-100 rounded" src="../assets/pilot-3.jpg"/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="springtime.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Springtime</p>
+        </a>
+        <!-- <a class="w-100 text-align-right link hover-studio" href="pilot.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Pilot</p>
+        </a> -->
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

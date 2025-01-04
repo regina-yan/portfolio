@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Ode to Metro</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 border" src="../assets/metro-cover.jpg">
+            </div>
+            <div class="w-50">
+                <h2>Ode to Metro</h2>
+                <p>
+                    <div class="flex margin-bottom-sm">
+                        <div class="flex align-center rounded margin-right-md"><i data-lucide="volleyball" class="margin-right-sm color-studio "></i>Fiber Arts</div>
+                        <div class="flex align-center rounded"><i data-lucide="tree-deciduous" class="margin-right-sm color-studio "></i>Wood</div>
+                    </div>
+                    I moved back to the DC area in fall 2021 and wanted to make some barstools for our new home. I was inspired by the ups and downs of my metro experiences and created Ode to Metro: Metro Minimal, a neat and tidy series of strips, and Metro Mayhem, a mess of blobs (just like the red line)!
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Metro Minimal</h4>         
+            <div class="flex-stack-mobile flex-wrap gap justify-center">
+                <img class="w-50 mobile-100 rounded " src="../assets/metro1.jpg"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/metro2.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Metro Mayhem</h4>         
+            <div class="flex-stack-mobile flex-wrap gap justify-center">
+                <img class="w-50 mobile-100 rounded " src="../assets/metro3.jpg"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/metro4.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Some process photos</h4>  
+            <p>Some behind the scenes shots with my homemade frame and my attempt at drilling things together without a work table  </p>     
+            <div class="flex-stack-mobile flex-wrap gap justify-center margin-top-md">
+                <img class="w-50 mobile-100 rounded " src="../assets/metro5.jpg"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/metro6.jpg"/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="embroidery.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Embroidery</p>
+        </a>
+        <a class="w-100 text-align-right link hover-studio" href="printmaking.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Printmaking</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

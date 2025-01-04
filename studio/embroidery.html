@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Embroidery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 border" src="../assets/embroidery-cover.png">
+            </div>
+            <div class="w-50">
+                <h2>Embroidery</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                        <div class="flex align-center rounded"><i data-lucide="volleyball" class="margin-right-sm color-studio "></i>Fiber Arts</div>
+                    </div>
+                    With all the travelling, car camping and moving-around, I needed a small portable project that could go through TSA in a carry-on bag (and unfortunately my punch needle tools don't make the cut). Embroidery to the rescue! Here's a photo dump of keychains and clothes, all gifts
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Shirts</h4>
+            Fun gifts for friends and family! The Dartmouth sweatshirts are made with felt that I hand-cut and embroidered onto clothing. Might look into machine embroidery in the future because these actually took forever.           
+            <div class="flex-stack-mobile flex-wrap gap justify-center">
+                <div class="img-cover-container-tall w-50 mobile-100">
+                    <img class="rounded img-cover" src="../assets/embroidery-shirt1.png"/>
+                </div>
+                <div class="img-cover-container-tall w-50 mobile-100">
+                    <img class=" rounded img-cover" src="../assets/embroidery-shirt2.png"/>
+                </div>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-shirt3.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-shirt4.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-shirt5.png"/>
+               
+            </div>
+        </div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Patches</h4>
+            Fun and super portable, but need to do a better job with finishing the edges           
+            <div class="flex-stack-mobile flex-wrap gap justify-center">
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-patch1.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-patch2.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-patch3.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-patch4.png"/>
+               
+            </div>
+        </div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Patches, on hats!</h4>
+            Same comment about finishing the edges (it's especially bad on my first attempt, rock climbing Keggy). Used Fabric Fuse tape to stick them on the hats.       
+            <div class="flex-stack-mobile flex-wrap gap justify-center">
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-hat1.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-hat2.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-hat3.png"/>
+                <img class="w-50 mobile-100 rounded " src="../assets/embroidery-hat4.png"/>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="punch-needling.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Punch Needling</p>
+        </a>
+        <a class="w-100 text-align-right link hover-studio" href="metro.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Ode to Metro</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Appian Product Illustrations</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 border" src="../assets/appian-illustrations-cover.png">
+                <img class="rounded w-100 border" src="../assets/appian-rebrand1.png">
+            </div>
+            <div class="w-50">
+                <h2>Appian Product Illustrations</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                        <div class="flex align-center rounded"><i data-lucide="brush" class="margin-right-sm color-studio "></i>Illustration</div>
+                    </div>
+                    In my first year at Appian, I started a product illustration initiative to introduce graphics to the platform that not only added visual interest and enhanced user experience, but also promoted diversity and inclusivity - two values that are extremely important to myself and the company.
+                    <br/><br/>
+                    The next year, Appian underwent a rebrand that included a new style guide for illustrations -- oof, a lot of illustrations to update! I worked with the marketing team to push the direction of the new style to continue embodying the values we had in the initial illustrations, and I continued leading our platform illustrations team to rebrand and improve upon our existing graphics.
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>OG Illustrations</h4>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og1.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og2.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og3.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og4.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og5.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og6.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og7.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og8.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og9.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og10.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og11.png"/>
+            <img class="w-100 rounded margin-top-md" src="../assets/appian-og12.png"/>
+        </div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Updated Illustrations</h4>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-rebrand1.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new1.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new2.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new3.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new4.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new5.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new6.png"/>
+            <img class="w-100 rounded margin-top-md border" src="../assets/appian-new7.png"/>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-studio" href="sewing.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Sewing Dresses</p>
+        </a>
+        <a class="w-100 text-align-right link hover-studio" href="punch-needling.html">
+            <p class="flex align-center text-align-right justify-end">Next project <i data-lucide="arrow-right" class="margin-left-sm"></i></p>
+            <p>Punch Needling</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

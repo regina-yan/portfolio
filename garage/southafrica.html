@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | South Africa Climbing Trip</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-standard margin-auto flex-stack-mobile space-between">
+            <div class="w-50">
+                <img class="rounded w-100 " src="../assets/sa-cover.png">
+            </div>
+            <div class="w-50">
+                <h2>The Great Unknown: South Africa Climbing Trip</h2>
+                <p>
+                    <div class="flex margin-bottom-sm">
+                        <div class="flex align-center rounded margin-right-md"><i data-lucide="bike" class="margin-right-sm color-garage "></i>Biking</div>
+                    </div>
+                    <p>During my junior year winter break of college, I had the wonderful chance to go on a climbing trip sponsored by Dartmouth’s “Schlitz” adventure fund. I spent 3 weeks hiking, camping, road tripping, and climbing along the coast of South Africa with Catherine, Matt, and Sheppard. From leading a 5.11c to stumbling upon a man's (massive) marijuana farm, to huddling inside a tent during the mother-of-all thunderstorms, to being confronted by the reality of a country's racial and social divide and experiencing firsthand what it meant to have a severe water shortage, this adventure ended up being so much more than just a climbing trip. It was as much a lesson in the extent of my American privilege as it was a journey through the most beautiful, breathtaking parts of South Africa, and I'm so grateful to have experienced all of this with three wonderful, thoughtful friends.
+                    </p><p>
+                    Interested in climbing in South Africa? <a class="text-link garage" href="https://www.dropbox.com/s/zkq66lfoporj57o/SouthAfricaAnnotations.pdf?dl=0" target="_blank">Check out our beta here</a>
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="padding-page-divider"></div>
+    </div>
+    <div class="padding-page-divider"></div>
+    <div class="max-w-standard margin-auto">
+        <div class="">
+            <h4>Trip Video and Reflections</h4>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/znKuaubFDAs?si=AoLBnkC83LGnC3SU" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p>I shot this video on an iPhone 6 and edited with Premier Pro for the first time. While I had done some video editing before with iMovie, I wanted to push myself to create something better with more sophisticated software. I learned quite a bit about film editing and will definitely try to make some more trip videos going forward, hopefully with a better camera! (narrator: she still has not gotten a camera). Most of the footage was captured for fun without the intention of turning the clips into a film, so I'm hoping that being more intentional about the shots will create better results in the future (narrator: and she still has crap footage). All that being said, I ended up submitting this project to our school’s Moosilauke Film Festival, and it came in first woohoo!</p>
+            <p>^ I wrote this summary as a college junior. Looking back, I don't think I fully grasped what I learned and in the future hope to better reflect on my experiences (or at least, improve the way I share them)!</p>
+        </div>
+    </div>
+
+
+
+    <div class="padding-page-divider-line"></div>
+    <div class="flex max-w-standard margin-auto">
+        <a class="w-100 link hover-garage" href="est.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Previous project</p>
+            <p>Biking the Empire State Trail</p>
+        </a>
+
+    </div>
+    <div class="padding-page-divider"></div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>
