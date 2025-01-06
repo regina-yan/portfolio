@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | SuperDial Case Study: Designing a Conversation</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/png">
+
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="max-w-thin margin-auto flex flex-wrap space-between bg-outline-sides padding-sm">
+            <div class="w-100">
+                <a class="w-100 link hover-office" href="superdial.html">
+                    <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+                </a>
+                <div class="padding-page-divider-sm"></div>
+                <img class="rounded w-100 border" src="../assets/superdial-casestudy4.png">
+            </div>
+            <div class="w-100">
+                <h2>SuperDial Case Study: Designing a Conversation</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                    </div>
+                    In order to place automated calls, customers must tell us what questions they want us to ask. Read about how I designed a Script Builder that transformed human conversations into a concrete formula.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light-grey">
+       <div class="bg-off-white bg-outline-sides max-w-thin margin-auto padding-sm">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-thin margin-auto">
+            <div class="">
+                <h4>Problem</h4>
+                <p class="">Devise a "formula" for customers to describe the answers they need from the automated calls, and make this solution work for a wide range of call complexities. The solution must also be easily understood by our back-end AI "brain".</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>User Research</h4>
+                <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy1.png"/>
+                <p>Customers came to us with the full gambit of ways in which they standardized their calls. Provider offices might have a literal script, prescribing exactly what the receptionist should say down to the call introduction. Larger healthcare Revenue Cycle Management (RCM) companies, on the other hand, came to us with their own form-filling system, and yet others just entered relevant information into a Practice Management Software without utilizing a "script".</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Requirements</h4>
+                <p>After understanding the variety of existing paradigms, I came up with requirements. We needed to design a <b>Script Builder</b> that would be straightfoward and easy-to-use (Ops teams made it clear they don't have the time or technical background to deal with a complicated onboarding process), and the core design needed to be flexible enough for us to evolve as we acquired more use cases.</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Frameworks Considered</h4>
+                <p>I considered a variety of directions for our script builder, and they mostly boiled down to three categories:</p>
+                <p class="text-lg"><b>Decision Model</b></p>
+                <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy2.png"/>
+                <p>I first considered a "node model" design that could handle extremely complex scripts. Users could define questions, utilize condition operators... they could customize a script to exactly suit their needs. I quickly realized that 1. this design would seem too daunting for a non-technical user to take on, and we'd probably end up being the ones creating their scripts for them; 2. our customers don't really care about how we're getting to the answers on this detailed of a level; and 3. This decision tree would be too rigid for our AI to flexibily make decisions if something didn't exactly follow the flow. <b>This option would be over-designing the solution</b></p>
+                <p class="text-lg"><b>Answer Checklist</b></p>
+                <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy3.png"/>
+                <p>I then looked at a completely opposite approach. Instead of defining questions, just tell us what answers you're looking for by checking all the responses you want. We'd write the corresponding questions internally and let AI figure out when to ask them, and this would allow us to "standardize" questions more which could help AI accuracy (anytime someone wants to know their out-of-pocket max, we can ask it the same way). However, while this approach simplified things for our back-end team and supposedly simplified things for our customers, they wanted more flexibility and control over the process. <b>This option was too inflexible.</b></p>
+                <p class="text-lg"><b>Form Builder</b></p>
+                <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy4.png"/>
+                <p>So, we arrived at a Goldilocks solution where I took the positives of the two former approaches and designed a google form-esque Script Builder that had the flexibility of defining what questions to ask and when to ask them, but with a simplicity that doesn't feel daunting.</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Final Thoughts & Implementation</h4>
+                <p>We implemented v1 of our Script Builder in Fall 2023 and have continued iterating since. The Script Builder evolves as we gain greater clarity on use cases - for example, we've found that many customers want similar scripts, so we've created sample "base" scripts that get you 70% of the way there. Our core design didn't box us into a corner, which has allowed us to easily adapt to changes. The Script Builder isn't some ground-breaking feature, but it manages to suit the complex needs of our customers while being easy to understand, and I'm quite happy with that.</p>
+            </div>
+    
+    
+        </div>
+    </div> 
+    </div>
+    
+    <div class="divider-line"></div>
+    <div class="flex max-w-thin margin-auto">
+        <a class="w-100 link hover-office" href="superdial.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+            <p>SuperDial</p>
+        </a>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

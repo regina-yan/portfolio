@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | SuperPay Case Study: Metrics</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/png">
+
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="max-w-thin margin-auto flex flex-wrap space-between bg-outline-sides padding-sm">
+            <div class="w-100">
+                <a class="w-100 link hover-office" href="superpay.html">
+                    <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+                </a>
+                <div class="padding-page-divider-sm"></div>
+                <img class="rounded w-100  bg-off-white" src="../assets/superpay-metrics-after.svg">
+            </div>
+            <div class="w-100">
+                <h2>Diving into the Downfall - Metrics and Lessons Learned</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                    </div>
+                    A look at metrics and how they influenced decision-making
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light-grey">
+       <div class="bg-off-white bg-outline-sides max-w-thin margin-auto padding-sm">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-thin margin-auto">
+            <div class="">
+                <h4>Goal</h4>
+                <p class="">Increase our primary metric for success: <b>Percentage of users who fully complete onboarding</b> (out of all the patients who receive invite email)</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>The Starting Point</h4>
+                <p>We built the entire SuperPay platform in 2 weeks so that we could get the program up-and-running with our 3 “beta tester” providers. I used Retool to track our onboarding rates, and found the following trend after the first month of SuperPay</p>
+                <img class="rounded w-100 margin-top-md" src="../assets/superpay-before.svg">
+                <p>The founders and I figured that <b>increasing invites sent</b> was the easiest to tackle, which we did through provider incentives + improved messaging. I also personally wanted to <b>improve the drop-off rate in the sign-up flow</b> by making the account creation + payment information as easy as possible, and make us seem as trustworthy as possible since no one wants to put their credit card down on a site that doesn’t feel legit.</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>3 Months Later...</h4>
+                <img class="rounded w-100 " src="../assets/superpay-metrics-after.svg">
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Takeaways</h4>
+                <p>Key things to note because the chart doesn't say much at first glance:
+                </p>
+                <ul>
+                    <li><b>Reduced Sign-Up drop-off from 32% to 6%</b> - My UI improvements worked! Before, about a third of our patients did not complete sign-up (between stages "Sign Up Started" and "Sign Up Completed"), presumably on the payment step. With the payment page improvements, we got that down to just 6%.</li>
+                    <li><b>An increase in "Invites Sent" did not lead to the desired increase in "Sign Ups Started":</b> In fact, the drop-off rate actually got worse RIP. Before, 78% of the patients who received invites started signing up. And though we did dramatically increase our invites sent and our percentage of patients signed up went up, only 57% of invited patients actually started sign-ups (29 of 51%). No matter what we tried, we just couldn't get patients to start signing up, which ultimately led to the project's demise.
+                    </li>
+                </ul>
+            </div>
+
+    
+    
+        </div>
+    </div> 
+    </div>
+    
+    <div class="divider-line"></div>
+    <div class="flex max-w-thin margin-auto">
+        <a class="w-100 link hover-office" href="superpay.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+            <p>SuperPay</p>
+        </a>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | SuperPay Case Study: Building Trust</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/png">
+
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey">
+        <div class="max-w-thin margin-auto flex flex-wrap space-between bg-outline-sides padding-sm">
+            <div class="w-100">
+                <a class="w-100 link hover-office" href="superpay.html">
+                    <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+                </a>
+                <div class="padding-page-divider-sm"></div>
+                <img class="rounded w-100 border" src="../assets/superpay-patient4.svg">
+            </div>
+            <div class="w-100">
+                <h2>Building Trust - Patient Portal</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                    </div>
+                    I explored various ways to build trust and get patients to help us help them.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light-grey">
+       <div class="bg-off-white bg-outline-sides max-w-thin margin-auto padding-sm">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-thin margin-auto">
+            <div class="">
+                <h4>Goal</h4>
+                <p class="">Encourage patients to sign up and <b>provide payment + insurance information.</b> That’s really all they need to do, and SuperPay benefits will kick in - they don’t need to come back to the portal again.</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Challenges</h4>
+                <p><b>Convincing people to give us their credit card / bank information</b> - obviously folks will drop off when they reach a payment stage, and SuperPay won’t work unless patients tell us how we can charge them for their visits.</p>
+                <p>Also, <b>ensuring folks enter their insurance information correctly.</b> Claim filing doesn’t work (and results in lots of customer success headaches) when even a silly thing like the street address is incorrect</p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Robust and Informational Payment Step</h4>
+                <p>People are not going to enter their credit card if they don't feel compelled to, don't know what they'll be charged for, or don't trust the product!</p>
+                <p>The section title is "How would you like to pay [patient name] to feel more relatable (rather than simply "Payment"), we provided transparency about the payment process and what is free vs. fee, and displayed additional information in an FAQ modal</p>
+                <img class="w-100 rounded margin-top-md border" src="../assets/superpay-patient1.svg"/>
+                <img class="w-100 rounded margin-top-md border" src="../assets/superpay-patient3.svg"/>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Lightweight, Transparent Portal</h4>
+                <p>Our ideal user would create their account, add their payment info and insurance card, and <b>never have to open SuperPay again.</b> Our users don’t want more overhead, the whole reason they join SuperPay is so that they have 1 less thing to worry about (claim-filing). So, we kept the Patient portal lightweight and only showed information you needed to know, with access to detailed information if requested.</p>
+                <img class="w-100 rounded margin-top-md border" src="../assets/superpay-patient4.svg"/>
+                <img class="w-100 rounded margin-top-md border" src="../assets/superpay-patients5.svg"/>
+            </div>
+
+    
+    
+        </div>
+    </div> 
+    </div>
+    
+    <div class="divider-line"></div>
+    <div class="flex max-w-thin margin-auto">
+        <a class="w-100 link hover-office" href="superpay.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+            <p>SuperPay</p>
+        </a>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>
