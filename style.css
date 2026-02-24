@@ -8,7 +8,7 @@
     --primary-color-hover: rgba(18, 201, 140, 0.35);
     --office-color: #12c98c;
     --office-color-hover: rgba(18, 201, 140, 0.35);
-    --office-color-hover-light: rgba(18, 201, 140, 0.15);
+    --office-color-hover-light: rgba(18, 201, 140, 0.1);
     --studio-color: #5572f3;
     --studio-color-hover: rgba(89, 122, 255, 0.35);
     --studio-color-hover-light: rgba(89, 122, 255, 0.15);
@@ -200,6 +200,10 @@ p{
     border-left: 1px dotted var(--border-color);
     border-right: 1px dotted var(--border-color);
 }
+.bg-background-crosshairs {
+    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust spacing here */
+  }
 .rounded-top{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
