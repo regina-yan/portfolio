@@ -143,6 +143,12 @@ p{
 .margin-bottom-sm{
     margin-bottom: 0.5rem;
 }
+.margin-bottom-md{
+    margin-bottom: 1rem;
+}
+.margin-top-none{
+    margin-top: 0 !important;
+}
 .margin-top-md{
     margin-top: 1rem;
 }
@@ -596,6 +602,9 @@ td:nth-child(2), th:nth-child(2) {
         flex-direction: column;
     }
     .w-50{
+        max-width: 100%;
+    }
+    .w-33{
         max-width: 100%;
     }
     .w-25{
