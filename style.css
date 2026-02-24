@@ -445,6 +445,9 @@ p{
 .color-yellow{
     color: #d6c107;
 }
+.rotate-270{
+    transform: rotate(270deg);
+}
 .link-button{
     text-decoration: none;
     color: var(--text-color);
