@@ -452,6 +452,21 @@ p{
 .rotate-270{
     transform: rotate(270deg);
 }
+.rotate-bounce-spin {
+    display: inline-block;
+    animation: spinBounce 4s ease-in-out infinite;
+    will-change: transform;
+  }
+  
+  @keyframes spinBounce {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(720deg);
+    }
+  }
 .link-button{
     text-decoration: none;
     color: var(--text-color);
