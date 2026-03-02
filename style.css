@@ -80,6 +80,11 @@ p{
 .text-xs{
     font-size: 0.875rem;
 }
+.text-caption{
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
 .text-lg{
     font-size: 1.25rem;
 }

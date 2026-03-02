@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design by Regina | Clarative Case Study: A Vendor Due Diligence workflow that doesn’t suck</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/png">
+
+</head>
+<body>
+    <nav class="max-w-standard margin-auto">
+        <div class="flex space-between align-center nav-wrapper">
+            <ul>
+                <li><a href="../index.html" class="logo-small"></a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-icon">
+                <i data-lucide="menu" class="lucide-icon"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="margin-right-md hover-bg-office"><a href="../office.html" class="hover-office">Office</a></li>
+                <li class="margin-right-md hover-bg-studio"><a href="../studio.html" class="hover-studio">Studio</a></li>
+                <li class="margin-right-md hover-bg-garage"><a href="../garage.html" class="hover-garage">Garage</a></li>
+                <li class="margin-right-md hover-bg-shop"><a href="../shop.html" class="hover-shop">Shop</a></li>
+                <li class="hover-bg-office"><a href="../about.html" class="hover-office">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light-grey bg-background-crosshairs">
+        <div class="bg-off-white max-w-thin margin-auto flex flex-wrap space-between bg-outline-sides padding-sm">
+            <div class="w-100">
+                <a class="w-100 link hover-office" href="clarative.html">
+                    <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+                </a>
+                <div class="padding-page-divider-sm"></div>
+                <img class="rounded w-100 border" src="../assets/clarative-manage-columns.png">
+            </div>
+            <div class="w-100">
+                <h2>Clarative Case Study: Architecting for different users</h2>
+                <p>
+                    <div class="flex space-between margin-bottom-sm">
+                    </div>
+                    Even with one clear persona, a Third-Party Risk Manager (TPRM) at a scale-up, we quickly learned there isn't just one way they want to use our product. Program maturity, existing tools, and personal preferences all shape how they work (seems obvious now!) - here's how we held onto a strong product opinion while still allowing flexibility.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light-grey bg-background-crosshairs">
+       <div class="bg-off-white bg-outline-sides max-w-thin margin-auto padding-sm">
+        <div class="padding-page-divider"></div>
+        <div class="max-w-thin margin-auto">
+            <div class="">
+                <h4>Business Problem</h4>
+                <p>As we ramped up design partnerships for our Due Diligence modules, two distinct TPRM profiles emerged:
+                </p>
+                <div class="card padding-sm border rounded margin-bottom-sm bg-garage-light border-garage">
+                    <p><b>Avery - emerging risk program manager</b></p>
+                    <p class="">“I'm just getting started building our risk program. I don't know what 'good' looks like yet, and I'm hoping Clarative can be my one-stop shop for risk and compliance.”
+                    </p>
+                </div>
+                <div class="card padding-sm border rounded bg-office-light border-office">
+                    <p><b>Zakiah - mature risk program manager</b></p>
+                    <p class="">“I already have a mature risk program and existing tools. I can't replace everything with Clarative (due to existing software contracts and overhead of change management), but Clarative's AI-forward tools like Due Diligence Evidence Review are compelling on their own.”
+                    </p>
+                </div>
+                <p><span class="color-garage">Avery</span> was the clearer product-design anchor. But from a business perspective, we couldn't ignore <span class="color-office">Zakiah</span> who had more budget and presented strong “land and expand” opportunities.
+                </p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Goal</h4>
+                <p>Design a Due Diligence suite that works as a fully interconnected workflow while still delivering value as standalone modules.
+                </p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Role</h4>
+                <p> Sole designer, partnering closely with the Head of Engineering and CTO to consider both business and architectural implications.
+                </p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Impact</h4>
+                <p>Successfully converted trial users to paid customers across both user types.
+                </p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Process</h4>
+                <img class="rounded w-100" src="../assets/clarative-user-journey.png">
+                <p><b>Mapped end-to-end user journeys</b> for both <span class="color-garage">Avery</span> and <span class="color-office">Zakiah</span>
+                </p>
+                <p><b>Audited existing tools and integration paths</b> (especially critical for <span class="color-office">Zakiah</span>)
+                </p>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Design Decisions</h4>
+                <div class="card padding-sm border rounded margin-bottom-sm">
+                    <h4>Modular Architecture</h4>
+                    <p class="">We decided on a <b>modular architecture: customers can “plug and play” the modules they need.</b> This let us offer a cohesive, full-suite experience for <span class="color-garage">Avery</span> and <span class="color-office">Zakiah</span>, create natural upsell paths for <span class="color-office">Zakiah</span>, and maintain architectural flexibility as the product evolved. The challenge? Our data models and user-facing labels needed to be configurable enough for integrations, while still feeling coherent and opinionated within our own platform.
+                    </p>
+                    <img class="rounded w-100 border margin-top-md" src="../assets/clarative-manage-columns.png">
+                    <p class="text-caption">For example, on our Vendors page, we allowed users to manage table columns and views to accomodate different internal tags</p>
+                    <h5>Other Options Considered:</h5>
+                    <div class="">
+                        <div class="bg-off-white rounded padding-sm margin-bottom-md">
+                            <p class="text-xs">
+                                <b>Unified platform:</b> We explored committing fully to an opinionated, seamless workflow. This would reduce configuration complexity and create a clear end-to-end experience, but it lacked the flexibility <span class="color-office">Zakiah</span> required, and it presented risks if the all-in-one workflow didn't actually work for our <span class="color-garage">Averys</span>.
+
+                            </p>
+                        </div>
+                        <div class="bg-off-white rounded padding-sm margin-bottom-md">
+                            <p class="text-xs">
+                                <b>Composable workflows:</b> We considered composable “blocks” users could assemble into custom workflows. While flexible, this risked turning us into an orchestration platform (which we explicitly wanted to avoid from a strategy/sales perspective). More importantly, it would alienate <span class="color-garage">Avery</span> for whom Clarative's value was providing a clear, ready-made definition of “what good looks like.”
+
+                            </p>
+                        </div>
+                    </div>
+                    <h4>On & Off Ramps</h4>
+                    <p class=""><span class="color-office">Zakiah</span>, in particular, needed flexibility in how they interacted with us:
+                        <ul>
+                            <li>Maintain existing sources of truth (e.g., using tools like Zip for adding vendor) and <b>pulling their data into Clarative</b> (instead of creating their vendors on our platform)
+                            </li>
+                            <li>Use one or two of Clarative's bespoke best-in-class modules, such as Continuous Monitoring or Due Diligence Evidence Review, and <b>push the resulting data back into their existing tools.</b> 
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        This meant creating thoughtful on & off ramps for our modules, making it easy to import data, configure field labels to match internal terminology (“tier” vs. “classification” or “vendor” vs. “supplier” vs. “service provider”), and export the resulting work
+                    </p>
+                    <img class="rounded w-100 border margin-top-md" src="../assets/clarative-devapi.png">
+                    <p>
+                        We also built a developer API portal to support bidirectional data flow. Big shoutout to the engineering team here - I let them take a first pass at the designs given their knowledge of the use case, and I didn't need to make many changes!
+                    </p>
+                </div>
+            </div>
+            <div class="padding-page-divider"></div>
+            <div class="">
+                <h4>Final Thoughts</h4>
+                <p><b>1. When in doubt, choose flexibility</b></p>
+                <p>We chose the modular path because it gave us the most room to adapt later without heavy rework.</p>
+                <p><b>2. Users will use your product how they want, so watch them!</b>
+                </p>
+                <p>The beauty of modular architecture is that we aren't enforcing a perfect system. We're creating enough structure to guide <span class="color-garage">Avery</span>, while leaving space for <span class="color-garage">Avery</span> & <span class="color-office">Zakiah</span> to show us what the product needs to become.</p>
+                <p>It was always fascinating what parts they would latch onto - for example, our AI document summarization and extraction features. We intentionally surfaced “chat with my documents” everywhere, then observed where users naturally reached for it. Their behavior guided where and how we more deeply and intentionally embedded AI chat into the workflow.
+                </p>
+            </div>
+    
+    
+        </div>
+    </div> 
+    </div>
+    
+    <div class="divider-line"></div>
+    <div class="flex max-w-thin margin-auto">
+        <a class="w-100 link hover-office" href="clarative.html">
+            <p class="flex align-center"><i data-lucide="arrow-left" class="margin-right-sm"></i>Back</p>
+            <p>Clarative</p>
+        </a>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('hamburger-active');
+        });
+    </script>
+</body>
+</html>
