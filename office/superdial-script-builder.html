@@ -60,31 +60,43 @@
             <div class="">
                 <h4>User Research</h4>
                 <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy1.png"/>
-                <p>Customers came to us with the full gambit of ways in which they standardized their calls. Provider offices might have a literal script, prescribing exactly what the receptionist should say down to the call introduction. Larger healthcare Revenue Cycle Management (RCM) companies, on the other hand, came to us with their own form-filling system, and yet others just entered relevant information into a Practice Management Software without utilizing a "script".</p>
+                <p>Through customer conversations and early onboarding sessions, I identified a wide spectrum of workflows that organizations used to standardize phone calls. Some provider offices relied on literal scripts that dictated exactly what receptionists should say, down to the call introduction. Larger healthcare Revenue Cycle Management (RCM) organizations often used structured internal forms to guide conversations, while others simply documented relevant information directly in their Practice Management Software (PMS) without any need for a formal script playbook. 
+                </p>
             </div>
             <div class="padding-page-divider"></div>
             <div class="">
                 <h4>Requirements</h4>
-                <p>After understanding the variety of existing paradigms, I came up with requirements. We needed to design a <b>Script Builder</b> that would be straightfoward and easy-to-use (Ops teams made it clear they don't have the time or technical background to deal with a complicated onboarding process), and the core design needed to be flexible enough for us to evolve as we acquired more use cases.</p>
+                <p>After synthesizing these patterns, I defined the core requirements for a <b>Script Builder</b>. The tool needed to be intuitive and quick to adopt (our Ops teams consistently emphasized they didn't have time for complex setup or technical onboarding). At the same time, the underlying system needed to be flexible enough to support different scripting approaches and evolve as we uncovered additional use cases.
+                </p>
             </div>
             <div class="padding-page-divider"></div>
             <div class="">
                 <h4>Frameworks Considered</h4>
-                <p>I considered a variety of directions for our script builder, and they mostly boiled down to three categories:</p>
+                <p>I explored several potential directions for the Script Builder, which ultimately fell into three broad approaches:</p>
                 <p class="text-lg"><b>Decision Model</b></p>
                 <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy2.png"/>
-                <p>I first considered a "node model" design that could handle extremely complex scripts. Users could define questions, utilize condition operators... they could customize a script to exactly suit their needs. I quickly realized that 1. this design would seem too daunting for a non-technical user to take on, and we'd probably end up being the ones creating their scripts for them; 2. our customers don't really care about how we're getting to the answers on this detailed of a level; and 3. This decision tree would be too rigid for our AI to flexibily make decisions if something didn't exactly follow the flow. <b>This option would be over-designing the solution</b></p>
+                <p>    
+                My first concept was a node-based decision model capable of supporting highly complex call scripts. In this framework, users could define questions, apply conditional logic, and construct detailed branching flows tailored to their exact operational needs. While powerful, it quickly became clear that 
+                <ol>
+                    <li>This level of complexity would be difficult for non-technical users to adopt, and it would likely require significant support from our ops team to implement and maintain.</li>
+                    <li>Customers were less concerned with modeling every step of the decision process and more focused on reliably capturing the right information.</li>
+                    <li>From a technical perspective, rigid decision trees would also constrain the flexibility of our AI when conversations deviated from the prescribed path. (Too deterministic)</li>
+                </ol>
+                <b>Ultimately, this approach represented an over-engineered solution for the problem we were solving. </b></p>
                 <p class="text-lg"><b>Answer Checklist</b></p>
                 <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy3.png"/>
-                <p>I then looked at a completely opposite approach. Instead of defining questions, just tell us what answers you're looking for by checking all the responses you want. We'd write the corresponding questions internally and let AI figure out when to ask them, and this would allow us to "standardize" questions more which could help AI accuracy (anytime someone wants to know their out-of-pocket max, we can ask it the same way). However, while this approach simplified things for our back-end team and supposedly simplified things for our customers, they wanted more flexibility and control over the process. <b>This option was too inflexible.</b></p>
+                <p>I then explored the opposite end of the spectrum: a simplified model where users would only select the pieces of information they wanted to capture. Instead of defining the questions themselves, they would check off the desired answers, and our system would generate and standardize the corresponding questions internally. This approach had advantages from both an engineering and AI perspective, since standardizing questions could improve consistency and accuracy. However, during discussions with customers it became clear that this model removed too much control and visibility from their workflows.
+                    
+                    <br/><b>This option was too opaque.</b></p>
                 <p class="text-lg"><b>Form Builder</b></p>
                 <img class="w-100 rounded margin-top-md" src="../assets/superdial-casestudy4.png"/>
-                <p>So, we arrived at a Goldilocks solution where I took the positives of the two former approaches and designed a google form-esque Script Builder that had the flexibility of defining what questions to ask and when to ask them, but with a simplicity that doesn't feel daunting.</p>
+                <p>The final direction balanced the strengths of both approaches. I designed a form-based Script Builder—similar to familiar tools like Google Forms—that allowed teams to define what questions should be asked while keeping the interaction model simple and approachable. This approach provided enough structure for consistent data capture while remaining flexible for different operational styles and balanced usability, control, and technical adaptability.
+                </p>
             </div>
             <div class="padding-page-divider"></div>
             <div class="">
                 <h4>Final Thoughts & Implementation</h4>
-                <p>We implemented v1 of our Script Builder in Fall 2023 and have continued iterating since. The Script Builder evolves as we gain greater clarity on use cases - for example, we've found that many customers want similar scripts, so we've created sample "base" scripts that get you 70% of the way there. Our core design didn't box us into a corner, which has allowed us to easily adapt to changes. The Script Builder isn't some ground-breaking feature, but it manages to suit the complex needs of our customers while being easy to understand, and I'm quite happy with that.</p>
+                <p>We implemented v1 of our Script Builder in Fall 2023 and have continued iterating since. The Script Builder evolves as we gain greater clarity on use cases - for example, we've found that many customers want similar scripts, so we've created template "base" scripts that get you 70% of the way there. Our core design didn't box us into a corner, which has allowed us to easily adapt to changes. The Script Builder isn't some ground-breaking feature, but it manages to suit the complex needs of our customers while being easy to understand, and I'm quite happy with that.</p>
             </div>
     
     
